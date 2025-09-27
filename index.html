@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Portofolio resmi PouMods Official - Developer muda berusia 15 tahun. Ahli dalam script WhatsApp bot, pengembangan web, Node.js, Python, HTML, CSS, dan project digital kreatif.">
+    <meta name="keywords" content="PouMods, Portofolio, WhatsApp Bot, Node.js, Web Developer, Python, HTML, CSS, KuroHana, Kamiya, Script Bot, Developer Indonesia, portofoliov2.poumodss.my.id">
+    <meta name="author" content="PouMods Official">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://portofoliov2.poumodss.my.id/">
+    <meta property="og:title" content="Portofolio PouMods Official">
+    <meta property="og:description" content="Portofolio developer muda - WhatsApp Bot & Web Developer.">
+    <meta property="og:image" content="https://files.catbox.moe/ru43jz.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://portofoliov2.poumodss.my.id/">
+    <meta property="twitter:title" content="Portofolio PouMods Official">
+    <meta property="twitter:description" content="Portofolio developer muda - WhatsApp Bot & Web Developer.">
+    <meta property="twitter:image" content="https://files.catbox.moe/ru43jz.jpg">
+
+    <link rel="canonical" href="https://portofoliov2.poumodss.my.id/">
+
+    <title>Portfolio PouMods Official</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="particleCanvas"></canvas>
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <i class="fas fa-code"></i>
+                <span>PouMods Official</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <p class="loading-text">Initializing Portfolio...</p>
+        </div>
+    </div>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h2><i class="fas fa-code"></i> PouMods Official</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#skills" class="nav-link"><i class="fas fa-cogs"></i> Skills</a></li>
+                <li><a href="#projects" class="nav-link"><i class="fas fa-briefcase"></i> Projects</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <section id="home" class="home">
+        <div class="container">
+            <div class="home-content">
+                <div class="home-text" data-aos="fade-up">
+                    <h1>Hi, Saya <span class="highlight">PouMods Official</span></h1>
+                    <h2 class="typing-text">Website developer and WhatsApp bot script developer</h2>
+                    <p>Saya Pou, remaja 15 tahun yang tertarik pada dunia digital, khususnya dalam pengembangan script, website, dan tools.</p>
+                    <div class="home-buttons">
+                        <a href="#projects" class="btn btn-primary"><i class="fas fa-eye"></i> Lihat Portfolio</a>
+                        <a href="#contact" class="btn btn-secondary"><i class="fas fa-download"></i> Contact Me</a>
+                    </div>
+                </div>
+                <div class="home-image" data-aos="fade-left" data-aos-delay="300">
+                    <div class="profile-card">
+                        <div class="profile-img">
+                            <img src="https://files.catbox.moe/ru43jz.jpg" alt="Profile Picture" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 3px solid #00d4ff;">
+                        </div>
+                        <div class="floating-icons">
+                            <i class="fab fa-node-js"></i>
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-python"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-cuttlefish"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="music-player">
+        <div class="music-controls">
+            <div class="music-visualizer">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <button id="playPauseBtn" class="music-btn">
+                <i class="fas fa-play"></i>
+            </button>
+            <span class="music-title">Background Music</span>
+        </div>
+        <audio id="backgroundMusic" loop>
+            <source src="https://files.catbox.moe/uuawoy.mp4" type="audio/mp4">
+        </audio>
+    </div>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2><i class="fas fa-user-alt"></i> Tentang Saya</h2>
+                <p>Mengenal lebih dekat profil dan perjalanan karir saya</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Hello! Saya PouMods Official</h3>
+                    <p>Seorang developer muda berusia 15 tahun dengan keahlian dalam pembuatan script bot WhatsApp dan pengembangan web. Berfokus pada solusi digital yang inovatif, responsif, dan user-friendly, serta selalu berusaha menghadirkan karya kreatif yang bermanfaat bagi banyak orang.</p>
+                    <p>Saya percaya bahwa teknologi dapat mengubah dunia menjadi lebih baik, dan melalui coding, saya berusaha memberikan kontribusi positif dalam industry teknologi.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h4><i class="fas fa-trophy"></i> 50+</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4><i class="fas fa-clock"></i> 3+</h4>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4><i class="fas fa-smile"></i> 100%</h4>
+                            <p>Client Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-img-wrapper">
+                        <img src="https://files.catbox.moe/ru43jz.jpg" alt="About Picture" style="width: 180px; height: 180px; border-radius: 20px; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="skills" class="skills">
+  <div class="container">
+    <div class="section-title">
+      <h2><i class="fas fa-tools"></i> Keahlian Saya</h2>
+      <p>Bahasa & teknologi yang sedang saya kuasai</p>
+    </div>
+    <div class="skills-content">
+      
+      <div class="skill-item">
+        <div class="skill-icon">
+          <i class="fab fa-node-js"></i>
+        </div>
+        <h3>JavaScript</h3>
+        <div class="skill-bar">
+          <div class="skill-progress" data-percent="70"></div>
+        </div>
+        <span class="skill-percent">70%</span>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-icon">
+          <i class="fab fa-python"></i>
+        </div>
+        <h3>Python</h3>
+        <div class="skill-bar">
+          <div class="skill-progress" data-percent="40"></div>
+        </div>
+        <span class="skill-percent">40%</span>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <h3>Golang</h3>
+        <div class="skill-bar">
+          <div class="skill-progress" data-percent="30"></div>
+        </div>
+        <span class="skill-percent">30%</span>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-icon">
+          <i class="fab fa-html5"></i>
+        </div>
+        <h3>HTML</h3>
+        <div class="skill-bar">
+          <div class="skill-progress" data-percent="60"></div>
+        </div>
+        <span class="skill-percent">60%</span>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-icon">
+          <i class="fab fa-css3-alt"></i>
+        </div>
+        <h3>CSS</h3>
+        <div class="skill-bar">
+          <div class="skill-progress" data-percent="55"></div>
+        </div>
+        <span class="skill-percent">55%</span>
+      </div>
+      
+    </div>
+  </div>
+</section>
+    <section id="projects" class="projects">
+  <div class="container">
+    <div class="section-title">
+      <h2><i class="fas fa-laptop-code"></i> Projects Saya</h2>
+      <p>Beberapa project terbaik yang telah saya kerjakan</p>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-image">
+          <i class="fas fa-robot"></i>
+        </div>
+        <div class="project-content">
+          <h3>Kamiya Bot</h3>
+          <p>Script bot WhatsApp berbasis Baileys dengan fitur lengkap, interaktif, dan user-friendly.</p>
+          <div class="project-tech">
+            <span><i class="fab fa-node-js"></i> Node.js</span>
+            <span><i class="fab fa-js-square"></i> JavaScript</span>
+            <span><i class="fas fa-comments"></i> Baileys</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-link"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-image">
+          <i class="fas fa-code-branch"></i>
+        </div>
+        <div class="project-content">
+          <h3>KuroHana Bot</h3>
+          <p>Bot WhatsApp dengan fitur modular, mendukung berbagai perintah dan sistem handler modern.</p>
+          <div class="project-tech">
+            <span><i class="fab fa-node-js"></i> Node.js</span>
+            <span><i class="fab fa-js-square"></i> JavaScript</span>
+            <span><i class="fas fa-cogs"></i> Modular System</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-link"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-image">
+          <i class="fas fa-id-card-alt"></i>
+        </div>
+        <div class="project-content">
+          <h3>Website Portofolio</h3>
+          <p>Website pribadi dengan desain modern, dark mode, scroll reveal, preloader, dan integrasi media sosial.</p>
+          <div class="project-tech">
+            <span><i class="fab fa-html5"></i> HTML</span>
+            <span><i class="fab fa-css3-alt"></i> CSS</span>
+            <span><i class="fab fa-js"></i> JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-link"><i class="fas fa-eye"></i> Live Demo</a>
+            <a href="#" class="btn-link"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-image">
+          <i class="fas fa-tools"></i>
+        </div>
+        <div class="project-content">
+          <h3>Website Tools</h3>
+          <p>Website interaktif yang menyediakan fitur tools digital seperti redeem, copy source code, dan download script.</p>
+          <div class="project-tech">
+            <span><i class="fab fa-html5"></i> HTML</span>
+            <span><i class="fab fa-css3-alt"></i> CSS</span>
+            <span><i class="fab fa-js"></i> JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-link"><i class="fas fa-eye"></i> Live Demo</a>
+            <a href="#" class="btn-link"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-image">
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+        <div class="project-content">
+          <h3>Website E-Commerce</h3>
+          <p>Website marketplace sederhana dengan tampilan modern dan sistem katalog produk.</p>
+          <div class="project-tech">
+            <span><i class="fab fa-html5"></i> HTML</span>
+            <span><i class="fab fa-css3-alt"></i> CSS</span>
+            <span><i class="fab fa-js"></i> JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-link"><i class="fas fa-eye"></i> Live Demo</a>
+            <a href="#" class="btn-link"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+        <section class="thank-you">
+        <div class="container">
+            <div class="thank-you-card">
+                <div class="thank-you-content">
+                    <i class="fas fa-heart"></i>
+                    <h3>Terima Kasih!</h3>
+                    <p>Terima kasih telah mengunjungi portfolio saya. Saya berharap dapat berkolaborasi dengan Anda dalam project-project menarik di masa depan.</p>
+                    <div class="thank-you-icons">
+                        <i class="fas fa-handshake"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-thumbs-up"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-title">
+            <h2><i class="fas fa-envelope"></i> Hubungi Saya</h2>
+            <p>Mari berdiskusi tentang project Anda</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Mari Berkolaborasi!</h3>
+                <p>Saya selalu terbuka untuk opportunity baru dan project menarik. Jangan ragu untuk menghubungi saya!</p>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Indonesia</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+62 831 313 548 90</span>
+                </div>
+            </div>
+            <div class="contact-cards">
+                <div class="contact-card telegram">
+                    <div class="contact-icon">
+                        <i class="fab fa-telegram-plane"></i>
+                    </div>
+                    <h4>Telegram</h4>
+                    <p>Chat langsung untuk diskusi project</p>
+                    <a href="https://t.me/PouSkibudi" class="contact-btn" target="_blank">
+                        <i class="fab fa-telegram-plane"></i> Chat di Telegram
+                    </a>
+                </div>
+                <div class="contact-card whatsapp">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h4>WhatsApp</h4>
+                    <p>Komunikasi cepat via WhatsApp</p>
+                    <a href="https://wa.me/6283131354890" class="contact-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Chat di WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+<p>&copy; 2025 PouMods Official.<i class="fas fa-heart"></i></p>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button id="scrollTopBtn" class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+<script src="script.js"></script>
+</body>
+</html>
