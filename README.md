@@ -24,7 +24,3 @@
 - 🎭 **Scroll Reveal Animation** smooth  
 - ⌨️ **Dynamic Typing Effect** pake Typed.js  
 - 📱 **Fully Responsive** (Mobile Friendly)  
-
----
-
-## 📂 Project Structure
